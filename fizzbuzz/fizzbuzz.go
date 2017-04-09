@@ -1,7 +1,8 @@
-package fizzBuzzer
+package fizzbuzz
 
-func (i) {
-  var result string
+import "strconv"
+
+func Calculate(i int) (result string) {
   if i % 3 == 0 && i % 5 == 0 {
     result = "FizzBuzz"
   } else if i % 5 == 0 {
@@ -10,7 +11,7 @@ func (i) {
     result = "Fizz"
   }
   if len(result) == 0 {
-    return i
+    return strconv.Itoa(int(i))
   } else {
     return result
   }
